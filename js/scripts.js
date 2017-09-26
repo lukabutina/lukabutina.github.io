@@ -11,20 +11,22 @@ $(function() {
     var frontendCanvas = new Chart(ctxfrontend, {
         type: 'bar',
         data: {
-            labels: ["HTML5", "CSS3", "Javascript (ES6)", "AngularJS"],
+            labels: ["HTML5", "CSS3", "Javascript (ES6)", "AngularJS", "Responsive"],
             datasets: [{
-                data: [90, 80, 90, 50],
+                data: [90, 80, 90, 50, 90],
                 backgroundColor: [
                     'rgba(255, 99, 132, 1)',
                     'rgba(54, 162, 235, 1)',
                     'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)'
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(255, 155, 255, 1)'
                 ],
                 borderColor: [
                     'rgba(255,99,132,1)',
                     'rgba(54, 162, 235, 1)',
                     'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)'
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(255, 155, 255, 1)'
                 ],
                 borderWidth: 1
             }]
