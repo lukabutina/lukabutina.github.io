@@ -20,6 +20,7 @@ main {
         padding-top: 200px;
         background-color: lighten($main-color, 20%);
         padding-bottom: 1vw;
+        overflow: hidden;
         @media (max-width: 768px) {
             padding-bottom: 0px;
         }

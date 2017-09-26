@@ -8,9 +8,6 @@ html, body {
 body {
   overflow-x: hidden; }
 
-section {
-  overflow-x: hidden; }
-
 .flex {
   display: flex; }
 
@@ -102,7 +99,8 @@ main section {
 main #intro {
   padding-top: 200px;
   background-color: #42c08b;
-  padding-bottom: 1vw; }
+  padding-bottom: 1vw;
+  overflow: hidden; }
   @media (max-width: 768px) {
     main #intro {
       padding-bottom: 0px; } }
