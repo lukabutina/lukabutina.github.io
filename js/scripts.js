@@ -136,4 +136,17 @@ $(function() {
         $(this).addClass('active');
     });
 
+    $('.hamburger').on('click', function() {
+        $('nav.mobile-menu').toggleClass('active');
+    });
+
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if(scroll > 1) {
+            $('header').addClass('scrolled');
+        }
+        else {
+            $('header').removeClass('scrolled');
+        }
+    });
 });

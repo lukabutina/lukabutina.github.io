@@ -5,13 +5,21 @@ header {
     width: 100%;
     z-index: 2;
 
-    .menu {
+    div.menu {
         font-size: 1.5rem;
         color: #FFF;
-        
 
         a {
             color: #FFF;
+        }
+
+        .hamburger {
+            display: flex;
+            align-items: center;
+
+            i {
+                cursor: pointer;
+            }
         }
 
         .container {
@@ -26,7 +34,29 @@ header {
             }
 
             nav {
+                a {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
 
+    .mobile-menu {
+        border-top: 1px solid darken($main-color, 5%);
+        border-bottom: 1px solid darken($main-color, 5%);
+
+        &:not(.active) {
+            display: none;
+        }
+
+        a {
+            display: block;
+
+            padding: 10px 20px;
+            text-align: center;
+
+            &:nth-of-type(2n-1) {
+                background-color: lighten($main-color, 3%);
             }
         }
     }

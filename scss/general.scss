@@ -4,8 +4,11 @@ html, body {
     font-family: 'Open Sans', sans-serif;
     font-size: 100%;
     color: #FFF;
-    overflow-x: hidden;
     height: 100%;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .flex {

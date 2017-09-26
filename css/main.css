@@ -3,8 +3,10 @@ html, body {
   font-family: 'Open Sans', sans-serif;
   font-size: 100%;
   color: #FFF;
-  overflow-x: hidden;
   height: 100%; }
+
+body {
+  overflow-x: hidden; }
 
 .flex {
   display: flex; }
@@ -54,15 +56,33 @@ header {
   left: 0;
   width: 100%;
   z-index: 2; }
-  header .menu {
+  header div.menu {
     font-size: 1.5rem;
     color: #FFF; }
-    header .menu a {
+    header div.menu a {
       color: #FFF; }
-    header .menu .container {
+    header div.menu .hamburger {
+      display: flex;
+      align-items: center; }
+      header div.menu .hamburger i {
+        cursor: pointer; }
+    header div.menu .container {
       padding-top: 30px; }
-      header .menu .container .row {
+      header div.menu .container .row {
         justify-content: space-between; }
+      header div.menu .container nav a {
+        margin-left: 20px; }
+  header .mobile-menu {
+    border-top: 1px solid #216246;
+    border-bottom: 1px solid #216246; }
+    header .mobile-menu:not(.active) {
+      display: none; }
+    header .mobile-menu a {
+      display: block;
+      padding: 10px 20px;
+      text-align: center; }
+      header .mobile-menu a:nth-of-type(2n-1) {
+        background-color: #2b805c; }
 
 main .container {
   z-index: 1; }
@@ -180,7 +200,20 @@ main #portfolio {
 
 @media (min-width: 768px) {
   body {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  header {
+    transition: background-color 0.2s ease-in-out; }
+    header .container {
+      transition: all 0.2s; }
+    header nav.mobile-menu {
+      display: none; }
+    header div.menu .hamburger {
+      display: none; }
+    header.scrolled {
+      background-color: #277554;
+      border-bottom: 1px solid #216246; }
+      header.scrolled div.menu .container {
+        padding: 10px 0px; } }
 
 @media (min-width: 992px) {
   body {
@@ -191,5 +224,21 @@ main #portfolio {
     font-size: 1.25rem; }
     body #portfolio {
       padding-top: 100px; } }
+
+@media (max-width: 768px) {
+  header {
+    background-color: #277554; }
+    header div.menu .container {
+      padding: 10px 0px; }
+    header nav.menu {
+      display: none; } }
+
+@media (max-width: 576px) {
+  header {
+    padding-left: 30px;
+    padding-right: 30px; }
+    header nav.mobile-menu {
+      margin-left: -30px;
+      margin-right: -30px; } }
 
 /*# sourceMappingURL=main.css.map */
