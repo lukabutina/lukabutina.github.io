@@ -8,6 +8,9 @@ html, body {
 body {
   overflow-x: hidden; }
 
+section {
+  overflow-x: hidden; }
+
 .flex {
   display: flex; }
 
