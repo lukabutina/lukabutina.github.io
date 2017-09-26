@@ -1,0 +1,33 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+
+    .menu {
+        font-size: 1.5rem;
+        color: #FFF;
+        
+
+        a {
+            color: #FFF;
+        }
+
+        .container {
+            padding-top: 30px;
+
+            .row {
+                justify-content: space-between;
+            }
+
+            .logo {
+
+            }
+
+            nav {
+
+            }
+        }
+    }
+}

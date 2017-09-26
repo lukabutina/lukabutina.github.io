@@ -1,0 +1,45 @@
+{
+  "name": "bootstrap-gulp",
+  "version": "1.0.0",
+  "description": "Bootstrap 4 Sass with Gulp",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-clone": "^1.0.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-merge": "^0.1.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.6.1"
+  },
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-clone": "^1.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-merge": "^0.1.1",
+    "gulp-minify": "^1.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-watch": "^4.3.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larrygeams/bootstrap-gulp.git"
+  },
+  "author": "Larry Geams Parangan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/larrygeams/bootstrap-gulp/issues"
+  },
+  "homepage": "https://github.com/larrygeams/bootstrap-gulp#readme"
+}
