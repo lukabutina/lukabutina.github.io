@@ -206,7 +206,8 @@ main #portfolio {
         color: #FFF;
         text-transform: uppercase; }
         main #portfolio .portfolio-items .item a.visit:hover {
-          text-decoration: none; }
+          text-decoration: none;
+          background-color: #3aae7d; }
       main #portfolio .portfolio-items .item .tags h4 {
         text-transform: uppercase;
         font-weight: 600;

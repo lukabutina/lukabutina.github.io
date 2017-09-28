@@ -153,12 +153,13 @@ main {
                     cursor: pointer;
                     padding: 5px 10px;
                     margin-bottom: 20px;
-                    background-color: #349b6f;
+                    background-color: lighten($main-color, 10%);
                     color: #FFF;
                     text-transform: uppercase;
 
                     &:hover {
                         text-decoration: none;
+                        background-color: lighten($main-color, 15%);
                     }
 
                 }
