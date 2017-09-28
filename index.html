@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/css/main.css">
 
     <meta property="og:url"                content="https://lukabutina.github.io" />
+    <meta property="og:type"              content="website" />
     <meta property="og:title"              content="Luka Butina" />
     <meta property="og:description"        content="Full Stack Web Developer" />
     <meta property="og:image"              content="https://lukabutina.github.io/img/og.jpg" />
@@ -205,6 +206,24 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
   <script src="https://use.fontawesome.com/5d8e0f6e8b.js"></script>
   <script src="/js/scripts.js"></script>
-  
+    <script>
+    window.fbAsyncInit = function() {
+        FB.init({
+        appId      : '1974034266165554',
+        cookie     : true,
+        xfbml      : true,
+        version    : '2.10'
+        });
+        FB.AppEvents.logPageView();   
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
   </body>
 </html>
