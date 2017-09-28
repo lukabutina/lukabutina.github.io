@@ -3,10 +3,18 @@ html, body {
   font-family: 'Open Sans', sans-serif;
   font-size: 100%;
   color: #FFF;
-  height: 100%; }
+  min-height: 100%;
+  margin: 0;
+  padding: 0; }
 
 body {
   overflow-x: hidden; }
+
+.hidden {
+  display: none; }
+
+.center {
+  text-align: center; }
 
 .flex {
   display: flex; }
@@ -86,12 +94,6 @@ header {
 
 main .container {
   z-index: 1; }
-
-main .hidden {
-  display: none; }
-
-main .center {
-  text-align: center; }
 
 main section {
   position: relative; }
@@ -190,6 +192,140 @@ main #portfolio {
   background-color: #dbf3e9; }
   main #portfolio h2 {
     color: #000; }
+  main #portfolio .portfolio-items {
+    padding-top: 80px; }
+    main #portfolio .portfolio-items .item {
+      display: flex;
+      margin-bottom: 80px; }
+      main #portfolio .portfolio-items .item a.visit {
+        display: inline-block;
+        cursor: pointer;
+        padding: 5px 10px;
+        margin-bottom: 20px;
+        background-color: #349b6f;
+        color: #FFF;
+        text-transform: uppercase; }
+        main #portfolio .portfolio-items .item a.visit:hover {
+          text-decoration: none; }
+      main #portfolio .portfolio-items .item .tags h4 {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.1rem; }
+      main #portfolio .portfolio-items .item .tags span {
+        display: inline-block;
+        color: #FFF;
+        padding: 4px 8px;
+        margin: 4px 2px;
+        background-color: #68cda2;
+        font-size: 1rem; }
+      main #portfolio .portfolio-items .item .computer-wrap {
+        position: relative;
+        background-color: #3c3c3c;
+        border-radius: 15px;
+        width: 100%;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 20px;
+        font-size: 1rem; }
+        main #portfolio .portfolio-items .item .computer-wrap .screen {
+          background-color: #426670; }
+          main #portfolio .portfolio-items .item .computer-wrap .screen img {
+            width: 100%; }
+        main #portfolio .portfolio-items .item .computer-wrap .camera {
+          padding-top: 15px;
+          padding-bottom: 25px; }
+          main #portfolio .portfolio-items .item .computer-wrap .camera span {
+            height: 10px;
+            width: 10px;
+            background-color: #bcbcbc;
+            border-radius: 5px;
+            margin: 0 auto;
+            display: block; }
+      main #portfolio .portfolio-items .item .phone-wrap {
+        position: relative;
+        background-color: #3c3c3c;
+        border-radius: 15px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 0px;
+        font-size: 1rem;
+        max-width: 280px; }
+        main #portfolio .portfolio-items .item .phone-wrap .screen {
+          background-color: #426670; }
+          main #portfolio .portfolio-items .item .phone-wrap .screen img {
+            width: 100%; }
+        main #portfolio .portfolio-items .item .phone-wrap .camera {
+          padding-top: 15px;
+          padding-bottom: 15px; }
+          main #portfolio .portfolio-items .item .phone-wrap .camera span {
+            height: 10px;
+            width: 10px;
+            background-color: #bcbcbc;
+            border-radius: 5px;
+            margin: 0 auto;
+            display: block; }
+        main #portfolio .portfolio-items .item .phone-wrap .button {
+          padding-top: 10px;
+          padding-bottom: 10px; }
+          main #portfolio .portfolio-items .item .phone-wrap .button span {
+            height: 35px;
+            width: 35px;
+            background-color: #bcbcbc;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: block; }
+      main #portfolio .portfolio-items .item .description {
+        color: #000;
+        padding: 0px 15px; }
+
+main #contact {
+  background-color: #277554; }
+  main #contact a {
+    color: #FFF; }
+    main #contact a:hover {
+      color: #999; }
+  main #contact .contact-icons {
+    font-size: 50px; }
+
+.col-flex-1 {
+  flex: 1; }
+
+.col-flex-2 {
+  flex: 2; }
+
+.col-flex-3 {
+  flex: 3; }
+
+.col-flex-4 {
+  flex: 4; }
+
+.col-flex-5 {
+  flex: 5; }
+
+.col-flex-6 {
+  flex: 6; }
+
+.col-flex-7 {
+  flex: 7; }
+
+.col-flex-8 {
+  flex: 8; }
+
+.col-flex-9 {
+  flex: 9; }
+
+.col-flex-10 {
+  flex: 10; }
+
+footer {
+  background-color: #2d8862; }
+  footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px; }
+  footer h4 {
+    margin: 0; }
 
 @media (max-width: 576px) {
   body {
@@ -232,7 +368,19 @@ main #portfolio {
     header div.menu .container {
       padding: 10px 0px; }
     header nav.menu {
-      display: none; } }
+      display: none; }
+  #portfolio .item {
+    flex-direction: column; }
+    #portfolio .item .col-flex-3 {
+      order: 0;
+      padding-bottom: 30px; }
+    #portfolio .item .col-flex-4 {
+      order: 1; }
+    #portfolio .item .col-flex-2 {
+      order: 0;
+      padding-bottom: 30px; }
+      #portfolio .item .col-flex-2 .phone-wrap {
+        margin: 0 auto; } }
 
 @media (max-width: 576px) {
   header {

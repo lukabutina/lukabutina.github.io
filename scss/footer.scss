@@ -1,0 +1,14 @@
+footer {
+    background-color: lighten($main-color, 5%);
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+    }
+
+    h4 {
+        margin: 0;
+    }
+}
