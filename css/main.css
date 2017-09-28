@@ -20,7 +20,7 @@ body {
   display: flex; }
 
 .space-top-bottom {
-  padding: 100px 0px; }
+  padding: 100px 15px; }
 
 h1 {
   font-size: 4rem; }
@@ -276,8 +276,7 @@ main #portfolio {
             margin: 0 auto;
             display: block; }
       main #portfolio .portfolio-items .item .description {
-        color: #000;
-        padding: 0px 15px; }
+        color: #000; }
 
 main #contact {
   background-color: #277554; }
