@@ -117,7 +117,10 @@ $(function() {
     });
 
     $('#skill-picker li').on('click', function() {
+        $('#skill-picker li').removeClass('active');
+
         var clicked = $(this).data("attr");
+        $(this).addClass('active');
         if(clicked == "frontend") {
             chart.data = data_frontend;
         }
