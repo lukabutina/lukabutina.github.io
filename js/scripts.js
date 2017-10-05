@@ -1,8 +1,6 @@
 $(function() {
 
     var ctxfrontend = document.getElementById("frontend-canvas").getContext('2d');
-    var ctxbackend = document.getElementById("backend-canvas").getContext('2d');
-    var ctxtools = document.getElementById("tools-canvas").getContext('2d');
 
     Chart.defaults.global.defaultFontColor = '#000';
     Chart.defaults.global.showLines = false;
